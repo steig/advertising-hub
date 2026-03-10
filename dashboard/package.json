@@ -1,0 +1,36 @@
+{
+  "name": "advertising-hub-dashboard",
+  "type": "module",
+  "scripts": {
+    "prebuild": "tsx src/data/ingest.ts",
+    "dev": "npm run prebuild && vite dev",
+    "build": "npm run prebuild && vite build",
+    "deploy": "npm run build && wrangler deploy",
+    "db:migrate": "wrangler d1 execute advertising-hub --file=src/services/d1-schema.sql"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "hono": "^4.0.0",
+    "lucide-react": "^0.400.0",
+    "prism-react-renderer": "^2.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-markdown": "^9.0.0",
+    "react-router": "^7.0.0",
+    "tailwindcss": "^4.0.0"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.0.0",
+    "@cloudflare/workers-types": "^4.0.0",
+    "@types/js-yaml": "^4.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "gray-matter": "^4.0.0",
+    "js-yaml": "^4.0.0",
+    "remark-gfm": "^4.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^6.0.0",
+    "wrangler": "^4.0.0"
+  }
+}

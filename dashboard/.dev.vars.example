@@ -1,0 +1,6 @@
+ENCRYPTION_KEY=generate-a-256-bit-key-here
+GOOGLE_CLIENT_ID=your-google-client-id.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+JWT_SECRET=generate-a-secure-random-string-here
+APP_DOMAIN=localhost:8787
+ANTHROPIC_API_KEY=sk-ant-your-key-here

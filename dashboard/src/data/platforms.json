@@ -1,0 +1,467 @@
+[
+  {
+    "name": "AdRoll",
+    "slug": "adroll",
+    "category": "retargeting",
+    "status": "active",
+    "api": {
+      "documentation": "https://help.adroll.com/"
+    },
+    "login": {
+      "url": "https://app.adroll.com"
+    },
+    "upstreamRepos": [],
+    "ourTools": [],
+    "agents": [],
+    "capabilities": {
+      "campaignManagement": true,
+      "reportingApi": true
+    }
+  },
+  {
+    "name": "Amazon Ads",
+    "slug": "amazon-ads",
+    "category": "commerce",
+    "status": "active",
+    "api": {
+      "documentation": "https://advertising.amazon.com/API/docs/en-us"
+    },
+    "login": {
+      "url": "https://advertising.amazon.com"
+    },
+    "upstreamRepos": [
+      {
+        "repo": "amzn/ads-advanced-tools-docs",
+        "advertisingRelevant": true
+      }
+    ],
+    "ourTools": [],
+    "agents": [],
+    "capabilities": {
+      "campaignManagement": true,
+      "reportingApi": true
+    }
+  },
+  {
+    "name": "Criteo",
+    "slug": "criteo",
+    "category": "retargeting",
+    "status": "active",
+    "api": {
+      "documentation": "https://developers.criteo.com/"
+    },
+    "login": {
+      "url": "https://marketing.criteo.com"
+    },
+    "upstreamRepos": [
+      {
+        "repo": "criteo/criteo-api-python-sdk",
+        "advertisingRelevant": true
+      }
+    ],
+    "ourTools": [],
+    "agents": [],
+    "capabilities": {
+      "campaignManagement": true,
+      "reportingApi": true
+    }
+  },
+  {
+    "name": "Demandbase",
+    "slug": "demandbase",
+    "category": "abm",
+    "status": "active",
+    "api": {
+      "documentation": "https://www.demandbase.com/"
+    },
+    "login": {
+      "url": "https://www.demandbase.com"
+    },
+    "upstreamRepos": [],
+    "ourTools": [],
+    "agents": [],
+    "capabilities": {
+      "campaignManagement": true,
+      "reportingApi": true
+    }
+  },
+  {
+    "name": "Google Ads",
+    "slug": "google-ads",
+    "category": "search",
+    "status": "active",
+    "api": {
+      "baseUrl": "https://googleads.googleapis.com",
+      "currentVersion": "v18",
+      "authType": "oauth2",
+      "authUrl": "https://accounts.google.com/o/oauth2/auth",
+      "tokenUrl": "https://oauth2.googleapis.com/token",
+      "scopes": [
+        "https://www.googleapis.com/auth/adwords"
+      ],
+      "documentation": "https://developers.google.com/google-ads/api/docs/start",
+      "rateLimits": {
+        "requestsPerDay": 15000,
+        "notes": "Rate limits vary by developer token access level (basic vs standard)"
+      }
+    },
+    "login": {
+      "url": "https://ads.google.com",
+      "apiConsole": "https://console.cloud.google.com",
+      "developerPortal": "https://developers.google.com/google-ads"
+    },
+    "upstreamRepos": [
+      {
+        "repo": "googleads/google-ads-python",
+        "description": "Official Python client library",
+        "language": "python",
+        "advertisingRelevant": true
+      },
+      {
+        "repo": "googleads/google-ads-node",
+        "description": "Official Node.js client library",
+        "language": "javascript",
+        "advertisingRelevant": true
+      },
+      {
+        "repo": "googleads/google-ads-dotnet",
+        "description": "Official .NET client library",
+        "language": "csharp",
+        "advertisingRelevant": true
+      },
+      {
+        "repo": "googleads/google-ads-java",
+        "description": "Official Java client library",
+        "language": "java",
+        "advertisingRelevant": true
+      },
+      {
+        "repo": "googleads/google-ads-php",
+        "description": "Official PHP client library",
+        "language": "php",
+        "advertisingRelevant": true
+      },
+      {
+        "repo": "googleads/google-ads-ruby",
+        "description": "Official Ruby client library",
+        "language": "ruby",
+        "advertisingRelevant": true
+      },
+      {
+        "repo": "googleads/googleads-shopping-samples",
+        "description": "Shopping campaign code samples",
+        "language": "multi",
+        "advertisingRelevant": true
+      }
+    ],
+    "ourTools": [
+      {
+        "name": "google-ads-mcp",
+        "repo": "itallstartedwithaidea/google-ads-mcp",
+        "type": "mcp-server",
+        "status": "live"
+      },
+      {
+        "name": "google-ads-api-agent",
+        "repo": "itallstartedwithaidea/google-ads-api-agent",
+        "type": "agent-system",
+        "status": "live"
+      },
+      {
+        "name": "google-ads-gemini-extension",
+        "repo": "itallstartedwithaidea/google-ads-gemini-extension",
+        "type": "cli-extension",
+        "status": "live"
+      }
+    ],
+    "agents": [
+      "ppc-strategist",
+      "search-query-analyst",
+      "auditor",
+      "creative-strategist"
+    ],
+    "capabilities": {
+      "campaignManagement": true,
+      "audienceTargeting": true,
+      "conversionTracking": true,
+      "reportingApi": true,
+      "bulkOperations": true,
+      "realTimeBidding": false,
+      "creativeUpload": true,
+      "offlineConversions": true,
+      "enhancedConversions": true,
+      "customerMatch": true
+    }
+  },
+  {
+    "name": "LinkedIn Ads",
+    "slug": "linkedin-ads",
+    "category": "social",
+    "status": "active",
+    "api": {
+      "documentation": "https://learn.microsoft.com/en-us/linkedin/marketing/"
+    },
+    "login": {
+      "url": "https://www.linkedin.com/campaignmanager"
+    },
+    "upstreamRepos": [
+      {
+        "repo": "linkedin/marketing-api-quickstart",
+        "advertisingRelevant": true
+      }
+    ],
+    "ourTools": [],
+    "agents": [],
+    "capabilities": {
+      "campaignManagement": true,
+      "reportingApi": true
+    }
+  },
+  {
+    "name": "Meta Ads",
+    "slug": "meta-ads",
+    "category": "social",
+    "status": "active",
+    "api": {
+      "baseUrl": "https://graph.facebook.com",
+      "currentVersion": "v21.0",
+      "authType": "oauth2",
+      "authUrl": "https://www.facebook.com/v21.0/dialog/oauth",
+      "tokenUrl": "https://graph.facebook.com/v21.0/oauth/access_token",
+      "scopes": [
+        "ads_management",
+        "ads_read",
+        "business_management"
+      ],
+      "documentation": "https://developers.facebook.com/docs/marketing-apis",
+      "rateLimits": {
+        "notes": "Rate limits vary by app, ad account, and access level"
+      }
+    },
+    "login": {
+      "url": "https://business.facebook.com",
+      "apiConsole": "https://developers.facebook.com/apps",
+      "developerPortal": "https://developers.facebook.com/docs/marketing-apis"
+    },
+    "upstreamRepos": [
+      {
+        "repo": "facebook/facebook-python-business-sdk",
+        "description": "Official Python Business SDK (Marketing API)",
+        "language": "python",
+        "advertisingRelevant": true
+      },
+      {
+        "repo": "facebook/facebook-nodejs-business-sdk",
+        "description": "Official Node.js Business SDK",
+        "language": "javascript",
+        "advertisingRelevant": true
+      },
+      {
+        "repo": "facebook/facebook-php-business-sdk",
+        "description": "Official PHP Business SDK",
+        "language": "php",
+        "advertisingRelevant": true
+      },
+      {
+        "repo": "facebook/facebook-java-business-sdk",
+        "description": "Official Java Business SDK",
+        "language": "java",
+        "advertisingRelevant": true
+      },
+      {
+        "repo": "facebook/facebook-ruby-business-sdk",
+        "description": "Official Ruby Business SDK",
+        "language": "ruby",
+        "advertisingRelevant": true
+      }
+    ],
+    "ourTools": [],
+    "agents": [
+      "paid-social-strategist",
+      "creative-strategist"
+    ],
+    "capabilities": {
+      "campaignManagement": true,
+      "audienceTargeting": true,
+      "conversionTracking": true,
+      "reportingApi": true,
+      "bulkOperations": true,
+      "realTimeBidding": false,
+      "creativeUpload": true,
+      "offlineConversions": true,
+      "conversionsApi": true,
+      "catalogAds": true,
+      "advantagePlus": true
+    }
+  },
+  {
+    "name": "Microsoft Advertising",
+    "slug": "microsoft-ads",
+    "category": "search",
+    "status": "active",
+    "api": {
+      "baseUrl": "https://bingads.microsoft.com/Api/v13",
+      "currentVersion": "v13",
+      "authType": "oauth2",
+      "authUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+      "scopes": [
+        "https://ads.microsoft.com/ads.manage"
+      ],
+      "documentation": "https://learn.microsoft.com/en-us/advertising/guides/",
+      "rateLimits": {
+        "requestsPerSecond": 6,
+        "notes": "Bulk operations have separate limits"
+      }
+    },
+    "login": {
+      "url": "https://ads.microsoft.com",
+      "apiConsole": "https://portal.azure.com",
+      "developerPortal": "https://learn.microsoft.com/en-us/advertising/guides/"
+    },
+    "upstreamRepos": [
+      {
+        "repo": "BingAds/BingAds-Python-SDK",
+        "description": "Official Python SDK",
+        "language": "python",
+        "advertisingRelevant": true
+      },
+      {
+        "repo": "BingAds/BingAds-dotNet-SDK",
+        "description": "Official .NET SDK",
+        "language": "csharp",
+        "advertisingRelevant": true
+      },
+      {
+        "repo": "BingAds/BingAds-Java-SDK",
+        "description": "Official Java SDK",
+        "language": "java",
+        "advertisingRelevant": true
+      },
+      {
+        "repo": "BingAds/BingAds-PHP-SDK",
+        "description": "Official PHP SDK",
+        "language": "php",
+        "advertisingRelevant": true
+      }
+    ],
+    "ourTools": [],
+    "agents": [
+      "microsoft-ppc-specialist"
+    ],
+    "capabilities": {
+      "campaignManagement": true,
+      "audienceTargeting": true,
+      "conversionTracking": true,
+      "reportingApi": true,
+      "bulkOperations": true,
+      "importFromGoogle": true,
+      "uetTag": true
+    }
+  },
+  {
+    "name": "Pinterest Ads",
+    "slug": "pinterest-ads",
+    "category": "social",
+    "status": "active",
+    "api": {
+      "documentation": "https://developers.pinterest.com/docs/api/v5/"
+    },
+    "login": {
+      "url": "https://ads.pinterest.com"
+    },
+    "upstreamRepos": [
+      {
+        "repo": "pinterest/pinterest-python-sdk",
+        "advertisingRelevant": true
+      }
+    ],
+    "ourTools": [],
+    "agents": [],
+    "capabilities": {
+      "campaignManagement": true,
+      "reportingApi": true
+    }
+  },
+  {
+    "name": "Quora Ads",
+    "slug": "quora-ads",
+    "category": "social",
+    "status": "active",
+    "api": {
+      "documentation": "https://quoraadsupport.zendesk.com/"
+    },
+    "login": {
+      "url": "https://www.quora.com/ads"
+    },
+    "upstreamRepos": [],
+    "ourTools": [],
+    "agents": [],
+    "capabilities": {
+      "campaignManagement": true,
+      "reportingApi": true
+    }
+  },
+  {
+    "name": "Reddit Ads",
+    "slug": "reddit-ads",
+    "category": "social",
+    "status": "active",
+    "api": {
+      "documentation": "https://ads-api.reddit.com/docs/"
+    },
+    "login": {
+      "url": "https://ads.reddit.com"
+    },
+    "upstreamRepos": [],
+    "ourTools": [],
+    "agents": [],
+    "capabilities": {
+      "campaignManagement": true,
+      "reportingApi": true
+    }
+  },
+  {
+    "name": "Spotify Ads",
+    "slug": "spotify-ads",
+    "category": "audio",
+    "status": "active",
+    "api": {
+      "documentation": "https://ads.spotify.com/"
+    },
+    "login": {
+      "url": "https://ads.spotify.com"
+    },
+    "upstreamRepos": [],
+    "ourTools": [],
+    "agents": [],
+    "capabilities": {
+      "campaignManagement": true,
+      "reportingApi": true
+    }
+  },
+  {
+    "name": "The Trade Desk",
+    "slug": "thetradedesk",
+    "category": "programmatic",
+    "status": "active",
+    "api": {
+      "documentation": "https://api.thetradedesk.com/v3/portal/documentation"
+    },
+    "login": {
+      "url": "https://desk.thetradedesk.com"
+    },
+    "upstreamRepos": [
+      {
+        "repo": "thetradedesk/Platform",
+        "advertisingRelevant": true
+      }
+    ],
+    "ourTools": [],
+    "agents": [],
+    "capabilities": {
+      "campaignManagement": true,
+      "reportingApi": true
+    }
+  }
+]

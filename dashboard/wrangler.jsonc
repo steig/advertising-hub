@@ -1,0 +1,41 @@
+{
+  "name": "advertising-hub-dashboard",
+  "compatibility_date": "2025-12-01",
+  "main": "src/index.ts",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "single-page-application"
+  },
+  // D1 SQL database for persistent storage
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "advertising-hub",
+    "database_id": "placeholder-create-with-wrangler-d1-create",
+    "migrations_dir": "src/services/migrations"
+  }],
+  // KV namespace for caching
+  "kv_namespaces": [{
+    "binding": "CACHE",
+    "id": "placeholder-create-with-wrangler-kv-namespace-create"
+  }],
+  // Durable Objects for stateful chat sessions
+  "durable_objects": {
+    "bindings": [{
+      "name": "CHAT_SESSION",
+      "class_name": "ChatSessionDO"
+    }]
+  },
+  "migrations": [{
+    "tag": "v1",
+    "new_classes": ["ChatSessionDO"]
+  }],
+  // R2 bucket for report outputs
+  "r2_buckets": [{
+    "binding": "REPORTS_BUCKET",
+    "bucket_name": "advertising-hub-reports"
+  }],
+  // Cron triggers for scheduled reports
+  "triggers": {
+    "crons": ["*/15 * * * *"]
+  }
+}
