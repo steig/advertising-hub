@@ -1,0 +1,21 @@
+name: Criteo
+slug: criteo
+category: retargeting
+status: active
+
+api:
+  documentation: https://developers.criteo.com/
+
+login:
+  url: https://marketing.criteo.com
+
+upstream_repos:
+  - repo: criteo/criteo-api-python-sdk
+    advertising_relevant: true
+
+our_tools: []
+agents: []
+
+capabilities:
+  campaign_management: true
+  reporting_api: true

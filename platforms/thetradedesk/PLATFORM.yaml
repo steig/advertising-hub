@@ -1,0 +1,21 @@
+name: The Trade Desk
+slug: thetradedesk
+category: programmatic
+status: active
+
+api:
+  documentation: https://api.thetradedesk.com/v3/portal/documentation
+
+login:
+  url: https://desk.thetradedesk.com
+
+upstream_repos:
+  - repo: thetradedesk/Platform
+    advertising_relevant: true
+
+our_tools: []
+agents: []
+
+capabilities:
+  campaign_management: true
+  reporting_api: true

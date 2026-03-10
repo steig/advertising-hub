@@ -1,0 +1,20 @@
+name: Quora Ads
+slug: quora-ads
+category: social
+status: active
+
+api:
+  documentation: https://quoraadsupport.zendesk.com/
+
+login:
+  url: https://www.quora.com/ads
+
+upstream_repos:
+  []
+
+our_tools: []
+agents: []
+
+capabilities:
+  campaign_management: true
+  reporting_api: true

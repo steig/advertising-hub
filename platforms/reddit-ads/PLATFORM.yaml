@@ -1,0 +1,20 @@
+name: Reddit Ads
+slug: reddit-ads
+category: social
+status: active
+
+api:
+  documentation: https://ads-api.reddit.com/docs/
+
+login:
+  url: https://ads.reddit.com
+
+upstream_repos:
+  []
+
+our_tools: []
+agents: []
+
+capabilities:
+  campaign_management: true
+  reporting_api: true

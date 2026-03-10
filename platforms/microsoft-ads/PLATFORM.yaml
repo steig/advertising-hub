@@ -1,0 +1,51 @@
+name: Microsoft Advertising
+slug: microsoft-ads
+category: search
+status: active
+
+api:
+  base_url: https://bingads.microsoft.com/Api/v13
+  current_version: v13
+  auth_type: oauth2
+  auth_url: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+  token_url: https://login.microsoftonline.com/common/oauth2/v2.0/token
+  scopes: ["https://ads.microsoft.com/ads.manage"]
+  documentation: https://learn.microsoft.com/en-us/advertising/guides/
+  rate_limits:
+    requests_per_second: 6
+    notes: "Bulk operations have separate limits"
+
+login:
+  url: https://ads.microsoft.com
+  api_console: https://portal.azure.com
+  developer_portal: https://learn.microsoft.com/en-us/advertising/guides/
+
+upstream_repos:
+  - repo: BingAds/BingAds-Python-SDK
+    description: "Official Python SDK"
+    language: python
+    advertising_relevant: true
+  - repo: BingAds/BingAds-dotNet-SDK
+    description: "Official .NET SDK"
+    language: csharp
+    advertising_relevant: true
+  - repo: BingAds/BingAds-Java-SDK
+    description: "Official Java SDK"
+    language: java
+    advertising_relevant: true
+  - repo: BingAds/BingAds-PHP-SDK
+    description: "Official PHP SDK"
+    language: php
+    advertising_relevant: true
+
+our_tools: []
+agents: [microsoft-ppc-specialist]
+
+capabilities:
+  campaign_management: true
+  audience_targeting: true
+  conversion_tracking: true
+  reporting_api: true
+  bulk_operations: true
+  import_from_google: true
+  uet_tag: true

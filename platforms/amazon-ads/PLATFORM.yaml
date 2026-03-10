@@ -1,0 +1,21 @@
+name: Amazon Ads
+slug: amazon-ads
+category: commerce
+status: active
+
+api:
+  documentation: https://advertising.amazon.com/API/docs/en-us
+
+login:
+  url: https://advertising.amazon.com
+
+upstream_repos:
+  - repo: amzn/ads-advanced-tools-docs
+    advertising_relevant: true
+
+our_tools: []
+agents: []
+
+capabilities:
+  campaign_management: true
+  reporting_api: true

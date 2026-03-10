@@ -1,0 +1,21 @@
+name: Pinterest Ads
+slug: pinterest-ads
+category: social
+status: active
+
+api:
+  documentation: https://developers.pinterest.com/docs/api/v5/
+
+login:
+  url: https://ads.pinterest.com
+
+upstream_repos:
+  - repo: pinterest/pinterest-python-sdk
+    advertising_relevant: true
+
+our_tools: []
+agents: []
+
+capabilities:
+  campaign_management: true
+  reporting_api: true

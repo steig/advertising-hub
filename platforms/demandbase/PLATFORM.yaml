@@ -1,0 +1,20 @@
+name: Demandbase
+slug: demandbase
+category: abm
+status: active
+
+api:
+  documentation: https://www.demandbase.com/
+
+login:
+  url: https://www.demandbase.com
+
+upstream_repos:
+  []
+
+our_tools: []
+agents: []
+
+capabilities:
+  campaign_management: true
+  reporting_api: true

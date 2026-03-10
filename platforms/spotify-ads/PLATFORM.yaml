@@ -1,0 +1,20 @@
+name: Spotify Ads
+slug: spotify-ads
+category: audio
+status: active
+
+api:
+  documentation: https://ads.spotify.com/
+
+login:
+  url: https://ads.spotify.com
+
+upstream_repos:
+  []
+
+our_tools: []
+agents: []
+
+capabilities:
+  campaign_management: true
+  reporting_api: true

@@ -1,0 +1,20 @@
+name: AdRoll
+slug: adroll
+category: retargeting
+status: active
+
+api:
+  documentation: https://help.adroll.com/
+
+login:
+  url: https://app.adroll.com
+
+upstream_repos:
+  []
+
+our_tools: []
+agents: []
+
+capabilities:
+  campaign_management: true
+  reporting_api: true

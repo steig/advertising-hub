@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "advertising-hub-core"
+version = "0.1.0"
+description = "Shared utilities for cross-platform advertising automation"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [{name = "John Williams", email = "john@itallstartedwithaidea.com"}]
+dependencies = ["httpx>=0.24.0", "pydantic>=2.0", "python-dotenv>=1.0.0"]
+
+[project.urls]
+Homepage = "https://github.com/itallstartedwithaidea/advertising-hub"
+
+[project.optional-dependencies]
+google = ["google-ads>=24.0.0", "google-auth>=2.0.0"]
+meta = ["facebook-business>=19.0.0"]
+microsoft = ["bingads>=13.0.0"]
+all = ["advertising-hub-core[google,meta,microsoft]"]
