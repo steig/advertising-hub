@@ -1,0 +1,30 @@
+title: "Discussion: Welcome + What platform do you want covered next?"
+labels: discussion
+body: |
+  ## Welcome to The Advertising Hub 👋
+
+  This is the open-source one-stop shop for advertising platform APIs, MCP servers, AI agents, and cross-platform automation.
+
+  **Current platforms:** Google Ads, Meta, Microsoft, Amazon, LinkedIn, Pinterest, Reddit, Spotify, The Trade Desk, Demandbase, Criteo, AdRoll, Quora
+
+  ## What should we add next?
+
+  We're considering:
+  - 🎵 **TikTok Ads** — Growing Marketing API, huge ad spend
+  - 📺 **DV360** — Google's DSP, complement to The Trade Desk
+  - 📧 **Google Ads Data Manager** — First-party data onboarding
+  - 🛒 **Walmart Connect** — Retail media
+  - 📱 **Snap Ads** — AR/camera advertising
+
+  **What platform would help you most? What patterns are you struggling with?**
+
+  Drop a comment. The most-requested platforms move up the roadmap.
+
+  ## How to contribute
+
+  The fastest way to contribute is:
+  1. **Write a pattern doc** — Share what you know about a platform's API gotchas
+  2. **Build an MCP server** — Pick a platform, use our templates
+  3. **Improve an agent** — Add capabilities, fix issues, share your expertise
+
+  See [CONTRIBUTING.md](../CONTRIBUTING.md) for full details.
